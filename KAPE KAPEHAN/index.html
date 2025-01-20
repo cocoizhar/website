@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basta Drink Coffee</title>
+    <link rel="icon" type="image/x-icon" href="image/logo1.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--------------------- OPEN NAVBAR--------------------->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+       <a href="#" class="logo">
+            <img src="image/logo.png" alt="Logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+        </nav>
+
+
+        <div class="cart-container" onmouseover="showCartForm()" onmouseout="hideCartForm()">
+            <a href="#" class="btn" id="cartButton">Cart</a>
+                <div class="cart-form" id="cartForm">
+                    <form>
+                        <div id="cartItems"></div>
+                    </form>
+                </div>
+        </div>
+
+        </header>
+
+    <!---------------------CLOSING NAVBAR--------------------->
+
+
+
+
+
+
+    <!--------------------- HOME --------------------->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>Basta Drink Coffee</h3>
+                <a href="#menu" class="btn">Menu</a>
+            </div>
+
+            <div class="image">
+                <img src="image/cafe.png" class="main-home-image" alt="">
+            </div>
+        </div>
+    </section>
+    <!--------------------- HOME --------------------->
+
+
+
+
+
+    <!--------------------- MENU --------------------->
+<section class="menu" id="menu">
+        <h1 class="heading">Coffee Drinks</h1>
+        <div class="box-container">
+<div class="box" onclick="addToCart('Hot Americano', '₱99.99', 'image/1.png', 'item1')"> 
+    <img src="image/1.png" alt="">
+    <div class="content">
+        <h3>Hot Americano</h3>
+        <p>An Embracing Robust Simplicity Of A Classic Americano, Delivering A Bold Coffee Flavor.</p>
+        <span>₱99.99</span>
+        <button id="item1">Add to cart</button>
+    </div>
+</div>
+<div class="box" onclick="addToCart('Hot Cafelatte', '₱99.99', 'image/2.png', 'item2'); return false;">
+    <img src="image/2.png" alt="">
+    <div class="content">
+        <h3>Hot Cafelatte</h3>
+        <p>A Comforting Warmth Awaits In This Rich Coffee Blend, Harmoniously Paired With Creamy Notes</p>
+        <span>₱99.99</span>
+        <button id="item2">Add to cart</button>
+    </div>
+</div>
+<div class="box" onclick="addToCart('Hot Cappuccino', '₱99.99', 'image/4.png', 'item3'); return false;">
+    <img src="image/4.png" alt="">
+    <div class="content">
+        <h3>Hot Cappuccino</h3>
+        <p>A Savor The Creamy Sophistication Of A Classic Cappuccino, Which Consists Of Espresso, Steamed Milk, And Foam.</p>
+        <span>₱99.99</span>
+        <button id="item3">Add to cart</button>
+    </div>
+</div>
+<div class="box" onclick="addToCart('Hot Mocha', '₱99.99', 'image/3.png', 'item4'); return false;">
+    <img src="image/3.png" alt="">
+    <div class="content">
+        <h3>Hot Mocha</h3>
+        <p>A Calming Sip With A Perfect Harmony Of Espresso And Chocolate, Creating A Delicious And Warming Delight.</p>
+        <span>₱99.99</span>
+        <button id="item4">Add to cart</button>
+    </div>
+</div>
+<div class="box" onclick="addToCart('Iced Caffelatte', '₱99.99', 'image/5.png', 'item5')"> 
+    <img src="image/5.png" alt="">
+    <div class="content">
+        <h3>Iced Caffelatte</h3>
+        <p>Experience The Chilled Embrace Of This Creamy Coffee Blend, Delivering A Refreshing Sensation.</p>
+        <span>₱99.99</span>
+        <button id="item5">Add to cart</button>
+    </div>
+</div>
+<div class="box" onclick="addToCart('Iced Americano', '₱99.99', 'image/6.png', 'item6')"> 
+    <img src="image/6.png" alt="">
+    <div class="content">
+        <h3>Iced Americano</h3>
+        <p>A Cool Down Feeling With The Crisp And Invigorating Taste Of A Classic Americano Over Ice.</p>
+        <span>₱99.99</span>
+        <button id="item6">Add to cart</button>
+    </div>
+</div>
+    </section>
+    <!--------------------- MENU --------------------->
+
+
+
+
+
+
+
+
+
+    <!---------------------ABOUT US --------------------->
+        <section class="about" id="about">
+        <h1 class="heading">about us</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="image/sample.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">Have your break with the SEM coffee!</h3>
+                <p>SEM is a recently developed coffee shop that became known in the coffee industry for it's uniqueness in 2021. It was founded by Shantal, Erraine, and Melanie. The brand is known for its innovation and quality, sourcing top-grade Arabica beans and using advanced roasting techniques in small batches. They go beyond just serving coffee, crafting an experience that transcends the ordinary. Their commitment to product promotion extends beyond serving, weaving a narrative that invites coffee enthusiasts to embark on a flavorful journey. Every cup from SEM is a testament to their dedication to the art of coffee and the essence of Philippines culture.</p>
+                <a href="#" class="btn">read more</a>
+                <div class="icons-container">
+                    <div class="icons">
+                        <img src="image/fb.png" alt="">
+                        <h3>Facebook</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="image/ig.png" alt="">
+                        <h3>Instagram</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="image/twitter.png" alt="">
+                        <h3>Twitter</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------- ABOUT US --------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="addtocart.js"></script>
+
+</body>
+
+</html>
